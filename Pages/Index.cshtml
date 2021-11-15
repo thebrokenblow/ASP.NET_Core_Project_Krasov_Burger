@@ -1,20 +1,10 @@
 ﻿@page
+@using KrasovBurger.Components
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
-<h1 style="text-align: center; font-family: 'Poppins', sans-serif;" class="mt-4">Меню</h1>
 
-<div class="card-columns mt-4">
-@foreach (var product in Model.Burgers)
-{
-    <div class="card">
-        <div class="card-img" style="background-image: url('@product.Image');">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">@product.Title</h5>
-        </div>
-    </div>
-}
- <div id="album"></div>
-</div>
+@(await Html.RenderComponentAsync<BurgerList>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>
