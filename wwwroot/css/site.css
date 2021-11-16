@@ -160,3 +160,36 @@ button.accept-policy {
     opacity: 1;
     bottom: 15px;
 }
+
+
+.cta {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)), url(/img/сover.jpg) fixed center center;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.cta h3 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.cta p {
+    color: #fff;
+}
+
+.cta-btn {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.cta-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
