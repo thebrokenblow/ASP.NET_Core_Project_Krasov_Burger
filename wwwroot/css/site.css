@@ -57,3 +57,53 @@ html, body {
 #hero .icon-box h4 a:hover {
    text-decoration: none;
 }
+
+
+.card-columns .card:hover .card-img {
+    opacity: 1;
+}
+
+.card-columns .card-body {
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-columns .card-img {
+    height: 330px;
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+}
+
+.modal .card-img {
+    height: 500px;
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-columns .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.carousel-caption p {
+    color: #fff;
+    margin: 0;
+}
+
+.about ul li {
+    list-style-type: none;
+}
+
+.about h3, p, li, ul {
+    color: #000;
+}
