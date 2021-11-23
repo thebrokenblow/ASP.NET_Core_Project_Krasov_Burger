@@ -59,17 +59,12 @@ html, body {
 }
 
 
-.card-columns .card:hover .card-img {
+.card-columns .card:hover .card {
     opacity: 1;
 }
 
-.card-columns .card-body {
-    height: 100px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.card-columns .card-img {
-    height: 330px;
+#card-img {
+    height: 260px;
     vertical-align: bottom;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,12 +72,18 @@ html, body {
     opacity: .8;
 }
 
-.modal .card-img {
+.card-columns .card-body {
+    height: 60px;
+    font-family: 'Nunito', sans-serif;
+    background: #fff;
+}
+
+.modal .card {
     height: 500px;
     vertical-align: bottom;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .card-columns .card:hover {
@@ -192,4 +193,12 @@ button.accept-policy {
 .cta-btn:hover {
     color: #fff;
     text-decoration: none;
+}
+
+footer {
+    background: #fff;
+}
+
+body, html {
+    height: 100%;
 }
