@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
-namespace Krasov_Burger.Services
+namespace KrasovBurger.Services
 {
     public class JsonFileBurgerService
     {
@@ -22,12 +22,14 @@ namespace Krasov_Burger.Services
 
         public IEnumerable<Burger> GetBurger()
         {
-            using var jsonFileReader = File.OpenText(JsonFileName);
-            return JsonSerializer.Deserialize<Burger[]>(jsonFileReader.ReadToEnd(),
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+            using (var jsonFileReader = File.OpenText(JsonFileName))
+            {
+                return JsonSerializer.Deserialize<Burger[]>(jsonFileReader.ReadToEnd(),
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+            }
         }
     }
 }
